@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration using Table</title>
+    <style type="text/css">
+        body{
+            margin: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(145, 8, 225);
+        }
+        .div-res{
+            justify-content: center;
+            border: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgb(41, 34, 47);
+            width: 600px;
+            height: 600px;
+            background-color: rgb(197, 129, 248);
+            border-radius: 15px;
+        }
+        h1{
+             text-align: center;
+        }
+        table, tr{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 90px;
+            padding-right: 70px;
+            font-size: 20px;
+        }
+        .form-cls input, .sel-clas {
+            border-radius: 4px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 0px solid black;
+        }
+        .form-cls button{
+            padding: 8px;
+            margin-bottom: 10px;
+            text-align: center;
+            cursor: pointer;
+            width: 100%; 
+            color: rgb(15, 244, 244);
+            
+        }
+        .form-cls button:hover{
+            color: rgb(82, 174, 168);
+        }
+
+    </style>
+</head>
+<body>
+   
+        <div class="div-res">
+    <form action="submitt.html" method="post" class="form-cls">
+           <h1>Registration Form</h1>
+        <table style="width: 100%;">
+           <tr>
+            <td><label for="name">Name</label></td>
+            <td><input type="text" name="name" id="name"></td>
+           </tr> 
+           <tr>
+            <td><label for="surname">Surname</label></td>
+            <td><input type="text" name="surname" id="surname"></td>
+           </tr> 
+           <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" name="password" id="password"></td>
+           </tr> 
+           <tr>
+            <td><label for="confirm_password">Confirm Password</label></td>
+            <td><input type="password" name="confirm_password" id="confirm_password"></td>
+           </tr> 
+           <tr>
+            <td><label>Gender</label></td>
+            <td>
+                <input type="radio" name="gender" value="Male" id="male"> <label for="male">Male</label>&nbsp;
+                <input type="radio" name="gender" value="Female" id="female"> <label for="female">Female</label>
+            </td>
+           </tr> 
+           <tr>
+            <td><label for="date">Date of Birth</label></td>
+            <td><input type="date" name="date" id="date"></td>
+           </tr> 
+           <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" name="email" id="email"></td>
+           </tr> 
+           <tr>
+            <td><label for="number">Phone Number</label></td>
+            <td><input type="tel" name="number" id="number"></td>
+           </tr> 
+           <tr>
+            <td><label for="religion" >Religion</label></td>
+            <td>
+                <select name="religion" id="religion" class="sel-clas">
+                    <option class="sel-clas">Hindu</option>
+                    <option class="sel-clas">Christian</option>
+                    <option class="sel-clas">Muslim</option>
+                    <option class="sel-clas">Other</option>
+                </select>
+            </td>
+           </tr> 
+           <tr>
+            <td style="font-size: 20px;" class="but-cls"><a href="submitt.html"><input type="button" value="Submit"></a></td>
+            <td style="font-size: 20px;"class="but-cls" ><input type="reset" value="Reset"></td>
+           </tr> 
+        </table>
+    </form>
+</div>
+</body>
+</html>
